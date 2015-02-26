@@ -13,7 +13,12 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>http://localhost:3000/#/</td>
+	<td>http://localhost:3000/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Add Screenshot</td>
 	<td></td>
 </tr>
 <tr>
@@ -27,13 +32,24 @@
 	<td></td>
 </tr>
 <tr>
+
 	<td>pause</td>
 	<td>10000</td>
+</tr>
+<tr>
+
+	<td>assertText</td>
+	<td>css=label.control-label</td>
+	<td>ScreenShot Title:</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=#file</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=file</td>
+	<td>css=#file</td>
 	<td>D:\1.jpg</td>
 </tr>
 <tr>
